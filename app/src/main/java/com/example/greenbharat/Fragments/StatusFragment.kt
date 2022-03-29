@@ -152,7 +152,7 @@ class StatusFragment : Fragment() {
     fun getData() {
 
             val url =
-                "https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$long&appid=ed62a7488ad29061bb20bd05346355fc&units=metric"
+                "https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$long&appid="
             val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, url, null, {
                 locationName.text = it.getString("name")
                 location.setImageResource(R.drawable.ic_baseline_location_on_24)
