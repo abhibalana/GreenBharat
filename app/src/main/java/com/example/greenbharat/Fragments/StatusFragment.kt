@@ -181,7 +181,7 @@ class StatusFragment : Fragment() {
 
     }
     fun getAirData(){
-        val url = "https://api.openweathermap.org/data/2.5/air_pollution?lat=$lat&lon=$long&appid=ed62a7488ad29061bb20bd05346355fc"
+        val url = "https://api.openweathermap.org/data/2.5/air_pollution?lat=$lat&lon=$long&appid="
         val jsonObjectRequest1 = JsonObjectRequest(Request.Method.GET,url,null, {
 
                 val array = it.getJSONArray("list").getJSONObject(0)
