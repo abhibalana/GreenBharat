@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="52dp"
+    tools:context=".Fragments.controlsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/valve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VALVE OFF/ON"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:padding="10dp"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#519259"/>
+
+        <TextView
+            android:id="@+id/valve1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/valve"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="40dp"
+            android:text="Valve1"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textColor="#344735"
+            android:textStyle="bold"
+            />
+        <Switch
+            android:id="@+id/swtich1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/valve1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

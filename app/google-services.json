@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "364807334650",
+    "project_id": "greenbharat-cfdb7",
+    "storage_bucket": "greenbharat-cfdb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364807334650:android:43caa79f1ecb09483af743",
+        "android_client_info": {
+          "package_name": "com.example.greenbharat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364807334650-65880siobsrab05pnq176mf6kpkhg6rs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.greenbharat",
+            "certificate_hash": "e424b7f83ba5e4d419ee8213d715643e19ed42d9"
+          }
+        },
+        {
+          "client_id": "364807334650-j0n8f6i9tq8vu01uj69kl37tdb7surp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArSAIOz0kzp_VIm-NuAJdlfwv-REoeCCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364807334650-j0n8f6i9tq8vu01uj69kl37tdb7surp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

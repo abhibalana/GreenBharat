@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/greenbharat"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/logo"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangle"
+            >
+            <ImageView
+                android:id="@+id/personImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="20dp"
+                />
+            <TextView
+                android:id="@+id/personName"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="35dp"
+                android:hint="AbhiBalana"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#519259"/>
+
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame2"
+            app:layout_constraintTop_toBottomOf="@id/frame1"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:background="@drawable/rec2"
+                >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_menu_book_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manual"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="17dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"/>
+
+            </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame3"
+            app:layout_constraintTop_toBottomOf="@id/frame2"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:background="@drawable/rec2"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_receipt_long_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms/Conditions"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="17dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"/>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame4"
+            app:layout_constraintTop_toBottomOf="@id/frame3"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            android:background="@drawable/rec2"
+            >
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_baseline_logout_24"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:id="@+id/logout"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="17dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"/>
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
